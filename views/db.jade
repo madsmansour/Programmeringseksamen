@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1= "DB"
+    div.container
+        table.table.table-striped
+            thead
+                th= "Id"
+                th= "Building"
+                th= "Room"
+                th= "Temperature"
+                th= "Humidity"
+                th= "c02"
+                th= "Airquality"
+                th= "Lightlevel"
+                th= "Lightcolor"
+            tbody
+                each customer in customers
+                    tr
+                        td= customer.id
+                        td= customer.building
+                        td= customer.room
+                        td= customer.temperature
+                        td= customer.humidity
+                        td= customer.c02
+                        td= customer.airquality
+                        td= customer.lightlevel
+                        td= customer.lightcolor
